@@ -5,3 +5,6 @@
 .unit{unicode-bidi:isolate}.mark.current{color:var(--red)}.unit.letter-current{color:var(--red)}
 
 .vowel-box{font-family:"Noto Sans Hebrew",serif;font-size:30px;display:inline-flex;position:relative;direction:ltr;align-items:center;justify-content:center;line-height:1.45}.vowel-mark{margin-left:-.72em}.target-display .vowel-box{font-size:34px}.mark.current{color:var(--red)}
+.hidden{display:none!important}.round-complete{margin:14px 0;padding:18px;border:1px solid #d8d0c2;border-radius:16px;background:#fff;text-align:center}.round-complete h2{margin:0 0 5px}.round-complete p{margin:0 0 12px;color:#6d675e}.storage-note{text-align:center;color:#928a7f;font-size:.78rem;margin:14px 0 8px}.menu .quiet{border-color:transparent;color:#928a7f;font-size:.82rem;padding:8px}
+
+.round-complete{margin-top:14px;padding:16px;border:1px solid #d9cdbb;border-radius:16px;background:#fff8ec;text-align:center}.round-complete p{color:#6f665b;margin:7px 0 12px}.storage-note{text-align:center;color:#8c8378;font-size:.78rem;margin:14px 0 4px}.reset-link{display:block;margin:0 auto 12px;border:0;background:none;color:#8c8378;font:inherit;font-size:.78rem;text-decoration:underline;cursor:pointer}.history{font-size:.7rem;color:#9a9187;margin-top:2px}

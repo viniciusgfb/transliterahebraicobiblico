@@ -1,12 +1,17 @@
 # Translitera - Hebraico bíblico
 
-Versão focada em um único modo de jogo: transliteração de nomes e palavras relacionadas.
+Web app estático para GitHub Pages.
 
-- Modo Alfabeto removido.
-- Estudo separado de letras e somente vogais.
-- Alef e Ayin: `.`, representados no jogo como apóstrofo `'`. Het: `ch`.
-- Suporte a pataḥ furtivo no fim de palavras, como נֹחַ → noach.
-- Vogais isoladas usam um quadrado-base para posicionamento visual.
+## Progresso individual
+O progresso é salvo localmente no navegador/dispositivo usando `localStorage`. O GitHub Pages não armazena o progresso dos jogadores.
 
-## GitHub Pages
-Envie todo o conteúdo desta pasta para a raiz do repositório, depois em Settings → Pages selecione `main` e `/(root)`.
+- O contador principal mostra o progresso da **rodada atual**.
+- `total` mostra quantas palavras já foram concluídas neste navegador ao longo das rodadas.
+- Ao concluir todo o banco, aparece **Começar nova rodada**, que libera novamente todas as palavras.
+- **Reiniciar progresso** apaga a rodada e o histórico deste navegador.
+- Outro celular/navegador começa com seu próprio armazenamento local.
+
+## Publicação
+1. Envie os arquivos para a raiz do repositório.
+2. GitHub → Settings → Pages → Deploy from a branch.
+3. Branch `main`, pasta `/(root)`.

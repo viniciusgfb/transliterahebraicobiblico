@@ -1,8 +1,9 @@
 const state = {
   names: [], letters: [], marks: [], current: null, relatedParent: null,
   units: [], unitIndex: 0, phase: "letter", markIndex: 0,
-  completed: new Set(JSON.parse(localStorage.getItem("translit-completed") || "[]")),
-  score: 0
+  completed: new Set(JSON.parse(localStorage.getItem("translit-round-completed") || "[]")),
+  score: 0,
+  totalCompleted: Number(localStorage.getItem("translit-total-completed") || "0")
 };
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const normalize = s => s.normalize("NFC");
@@ -14,7 +15,7 @@ async function loadData(){
   state.names=names; state.letters=letters; state.marks=marks; state.score=state.completed.size;
   updateCounter(); renderStudy();
 }
-function updateCounter(){ $("#score").textContent=state.score; $("#total").textContent=state.names.length; }
+function updateCounter(){ $("#score").textContent=state.score; $("#total").textContent=state.names.length; $("#totalHistory").textContent=state.totalCompleted; }
 function showView(id){ $$(".view").forEach(v=>v.classList.toggle("active",v.id===id+"View")); closeDrawer(); window.scrollTo({top:0,behavior:"smooth"}); }
 function openDrawer(){ $("#drawer").classList.add("open"); $("#drawer").setAttribute("aria-hidden","false"); }
 function closeDrawer(){ $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden","true"); }
@@ -149,7 +150,7 @@ function nextStep(){
 function finishCurrent(){ if(state.relatedParent){showRelatedResult(state.current,state.relatedParent);return;} finishName(state.current); }
 
 function finishName(n){
-  state.completed.add(n.id);localStorage.setItem("translit-completed",JSON.stringify([...state.completed]));state.score=state.completed.size;updateCounter();showNameResult(n);
+  state.completed.add(n.id); state.totalCompleted++; localStorage.setItem("translit-round-completed",JSON.stringify([...state.completed])); localStorage.setItem("translit-total-completed",String(state.totalCompleted)); state.score=state.completed.size; updateCounter(); showNameResult(n);
 }
 function showNameResult(n){
   $("#resultEyebrow").textContent="PALAVRA CONCLUÍDA";$("#resultHebrew").textContent=n.he;$("#resultTranslit").textContent=n.translit;$("#resultName").textContent=n.pt;$("#resultMeaning").textContent=n.meaning;$("#resultRefs").textContent=n.refs.join(" · ");
@@ -161,44 +162,12 @@ function showRelatedResult(r,parent){
   $("#resultEyebrow").textContent="PALAVRA RELACIONADA CONCLUÍDA";$("#resultHebrew").textContent=r.he;$("#resultTranslit").textContent=r.translit;$("#resultName").textContent=r.pt;$("#resultMeaning").textContent=r.meaning;$("#resultRefs").textContent="";$("#relatedSection").classList.add("hidden");$("#nextBtn").classList.add("hidden");$("#returnParentBtn").classList.remove("hidden");$("#returnParentBtn").onclick=()=>showNameResult(parent);showView("result");
 }
 function showAllDone(){
-  $("#resultEyebrow").textContent="BANCO CONCLUÍDO";$("#resultHebrew").textContent="✓";$("#resultTranslit").textContent="Todas concluídas";$("#resultName").textContent="Parabéns!";$("#resultMeaning").textContent="Você já completou todos os nomes que estão atualmente no banco.";$("#relatedSection").classList.add("hidden");$("#resultRefs").textContent=`${state.names.length} nomes estudados.`;$("#nextBtn").classList.add("hidden");$("#returnParentBtn").classList.add("hidden");showView("result");
+  $("#roundComplete").classList.remove("hidden");
+  showView("home");
 }
 
-function startAlphabet(){state.alphabetMode=true;state.relatedParent=null;state.alphabetPhase="letter";startAlphabetRound();}
-function randomLetter(){return state.letters.filter(l=>!l.final && l.he!=="ש").concat(state.letters.find(l=>l.he==="ש")||[])[Math.floor(Math.random()*22)]||state.letters[0];}
-function randomSyllable(){
-  const bases=state.letters.filter(l=>!l.final && !["א","ע","ה","י","ו"].includes(l.he));
-  const base=bases[Math.floor(Math.random()*bases.length)];
-  const vowels=state.marks.filter(m=>m.category==="vowel"&&["ַ","ָ","ֶ","ֵ","ִ","ֹ","ֻ","ְ"].includes(m.he));
-  const mark=vowels[Math.floor(Math.random()*vowels.length)];
-  return {he:normalize(base.he+mark.he),base:base.he,mark:mark.he};
-}
-function startAlphabetRound(){
-  state.current=null;state.relatedParent=null;state.units=[];
-  if(state.alphabetPhase==="letter"){
-    const l=randomLetter();state.alphabetTarget={kind:"letter",letter:l};state.units=[{base:l.he,marks:[]}];state.unitIndex=0;state.phase="letter";showView("game");renderAlphabetQuestion();
-  } else {
-    const s=randomSyllable();state.alphabetTarget={kind:"syllable",...s};state.units=buildUnits(s.he);state.unitIndex=0;state.phase="letter";showView("game");renderAlphabetQuestion();
-  }
-}
-function renderAlphabetQuestion(){
-  const t=state.alphabetTarget;$("#gameStep").textContent="Alfabeto";$("#questionLabel").textContent=t.kind==="letter"?"Qual é a transliteração desta letra?":"Qual é a transliteração desta letra?";$("#targetDisplay").textContent=t.kind==="letter"?t.letter.he:t.base;$("#translitPreview").textContent="—";renderHebrew();
-  const correct=t.kind==="letter"?(t.letter.game||t.letter.translit):effectiveLetter(state.units[0]);
-  const box=$("#options");box.innerHTML="";$("#feedback").textContent="";optionPool(correct,"letter",5).forEach(v=>{const b=document.createElement("button");b.className="option";b.textContent=v;b.addEventListener("click",()=>alphabetAnswer(v,correct,b));box.appendChild(b);});
-}
-function alphabetAnswer(value,correct,btn){
-  if(value!==correct){btn.classList.add("wrong");$("#feedback").textContent="Ainda não. Tente outra opção.";$("#feedback").className="feedback bad";setTimeout(()=>btn.classList.remove("wrong"),450);return;}
-  btn.classList.add("correct");$$(' .option').forEach(b=>b.disabled=true);$("#feedback").textContent="Correto!";$("#feedback").className="feedback good";
-  setTimeout(()=>{
-    if(state.alphabetTarget.kind==="letter"){state.alphabetPhase="syllable";startAlphabetRound();}
-    else if(state.phase==="letter"){const marks=playableMarks(state.units[0]); if(marks.length){state.phase="mark";state.markIndex=0;renderAlphabetMark();}else{state.alphabetPhase="letter";startAlphabetRound();}}
-  },350);
-}
-function renderAlphabetMark(){
-  const m=state.alphabetTarget.mark, correct=markInfo(m).game;$("#gameStep").textContent="Alfabeto · sílaba";$("#questionLabel").textContent="Qual é a transliteração deste sinal vocálico?";$("#targetDisplay").textContent=m;$("#translitPreview").textContent=effectiveLetter(state.units[0]);renderHebrew();
-  const box=$("#options");box.innerHTML="";optionPool(correct,"mark",5).forEach(v=>{const b=document.createElement("button");b.className="option";b.textContent=v;b.addEventListener("click",()=>{if(v!==correct){b.classList.add("wrong");$("#feedback").textContent="Ainda não. Tente outra opção.";$("#feedback").className="feedback bad";setTimeout(()=>b.classList.remove("wrong"),450);return;}b.classList.add("correct");$$('.option').forEach(x=>x.disabled=true);$("#feedback").textContent="Correto!";$("#feedback").className="feedback good";setTimeout(()=>{state.alphabetPhase="letter";startAlphabetRound();},350);});box.appendChild(b);});
-}
-
-$("#startBtn").addEventListener("click",pickNext);$("#alphabetBtn").addEventListener("click",startAlphabet);$("#drawerAlphabet").addEventListener("click",startAlphabet);$("#nextBtn").addEventListener("click",pickNext);$("#resultHomeBtn").addEventListener("click",()=>showView("home"));$("#backHomeBtn").addEventListener("click",()=>showView("home"));$("#menuBtn").addEventListener("click",openDrawer);$("#closeMenu").addEventListener("click",closeDrawer);$("#drawer").addEventListener("click",e=>{if(e.target===$("#drawer"))closeDrawer()});$$('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));$$('.home-nav').forEach(b=>b.addEventListener('click',()=>showView('home')));
+$("#startBtn").addEventListener("click",pickNext);$("#nextBtn").addEventListener("click",pickNext);
+$("#newRoundBtn").addEventListener("click",()=>{ state.completed=new Set(); state.score=0; localStorage.setItem("translit-round-completed","[]"); $("#roundComplete").classList.add("hidden"); updateCounter(); pickNext(); });
+$("#resetProgressBtn").addEventListener("click",()=>{ if(!confirm("Isso apagará o histórico e o progresso salvo neste navegador. Deseja continuar?")) return; state.completed=new Set(); state.score=0; state.totalCompleted=0; localStorage.removeItem("translit-round-completed"); localStorage.removeItem("translit-total-completed"); $("#roundComplete").classList.add("hidden"); updateCounter(); showView("home"); });$("#resultHomeBtn").addEventListener("click",()=>showView("home"));$("#backHomeBtn").addEventListener("click",()=>showView("home"));$("#menuBtn").addEventListener("click",openDrawer);$("#closeMenu").addEventListener("click",closeDrawer);$("#drawer").addEventListener("click",e=>{if(e.target===$("#drawer"))closeDrawer()});$$('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));$$('.home-nav').forEach(b=>b.addEventListener('click',()=>showView('home')));
 loadData().catch(err=>{console.error(err);document.body.innerHTML='<main style="padding:30px;font-family:system-ui"><h2>Não foi possível carregar o banco.</h2><p>Abra o projeto por um servidor HTTP, como o GitHub Pages ou um servidor local.</p></main>';});
 if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("service-worker.js").catch(()=>{}));

@@ -19,7 +19,7 @@
         <img src="assets/icon-192.png" alt="" class="brand-icon">
         <div><strong>Translitera</strong><span>Hebraico bíblico</span></div>
       </div>
-      <div class="counter" aria-label="Palavras concluídas"><span id="score">0</span><small>/ <span id="total">0</span></small></div>
+      <div class="counter" aria-label="Progresso"><span id="score">0</span><small>/ <span id="total">0</span></small><div class="history">total: <span id="totalHistory">0</span></div></div>
     </header>
 
     <main>
@@ -29,7 +29,7 @@
           <h1>Translitera - Hebraico bíblico</h1>
           <p class="lead">Aprenda a reconhecer letras, sinais e a transliterar nomes e palavras do hebraico bíblico.</p>
           <div class="home-actions">
-            <button id="startBtn" class="primary big">Começar uma palavra <span>→</span></button>
+            <button id="startBtn" class="primary big">Começar uma palavra <span>→</span></button><div id="roundComplete" class="round-complete hidden"><strong>🎉 Parabéns!</strong><p>Você concluiu todas as palavras cadastradas nesta rodada.</p><button id="newRoundBtn" class="primary">Começar nova rodada</button></div>
           </div>
           <div class="home-links">
             <button data-view="names" class="text-link">Nomes cadastrados</button>
@@ -37,7 +37,7 @@
             <button data-view="marks" class="text-link">Vogais</button>
           </div>
         </div>
-        <div class="tip"><strong>Dica:</strong> a seta ao lado do hebraico lembra que a leitura é da direita para a esquerda.</div>
+        <p class="storage-note">O progresso fica salvo somente neste navegador e neste dispositivo.</p><button id="resetProgressBtn" class="reset-link">Reiniciar progresso</button><div class="tip"><strong>Dica:</strong> a seta ao lado do hebraico lembra que a leitura é da direita para a esquerda.</div>
       </section>
 
       <section id="gameView" class="view">
@@ -79,7 +79,7 @@
       </section>
 
       <section id="namesView" class="view study-view">
-        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">BANCO</p><h2>Nomes adicionados</h2></div></div>
+        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">BANCO</p><h2>Nomes cadastrados</h2></div></div>
         <p class="muted">Lista em ordem alfabética. Este conteúdo vem de <code>data/banco.json</code>.</p>
         <div id="namesList" class="names-list"></div>
       </section>
