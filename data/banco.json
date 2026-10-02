@@ -1,5 +1,269 @@
 [
   {
+    "id": "joseph",
+    "he": "יוֹסֵף",
+    "hePlain": "יוסף",
+    "pt": "José",
+    "translit": "Yoseph",
+    "strong": 3130,
+    "meaning": "ele acrescenta, ele aumenta; o nome próprio José",
+    "related": [
+      {
+        "he": "יָסַף",
+        "hePlain": "יסף",
+        "translit": "yasaph",
+        "pt": "acrescentar / aumentar",
+        "strong": 3254,
+        "meaning": "acrescentar, aumentar, continuar"
+      }
+    ],
+    "refs": [
+      "Gênesis 30:24",
+      "Gênesis 37:3",
+      "Gênesis 50:26"
+    ]
+  },
+  {
+    "id": "benjamin",
+    "he": "בִּנְיָמִין",
+    "hePlain": "בנימין",
+    "pt": "Benjamim",
+    "translit": "Binyamin",
+    "strong": 1144,
+    "meaning": "filho da mão direita; o nome próprio Benjamim",
+    "related": [
+      {
+        "he": "בֵּן",
+        "hePlain": "בן",
+        "translit": "ben",
+        "pt": "filho / descendente",
+        "strong": 1121,
+        "meaning": "filho, descendente, criança"
+      },
+      {
+        "he": "יָמִין",
+        "hePlain": "ימין",
+        "translit": "yamin",
+        "pt": "mão direita / lado direito",
+        "strong": 3225,
+        "meaning": "mão direita, lado direito; sul"
+      }
+    ],
+    "refs": [
+      "Gênesis 35:18",
+      "Gênesis 42:4",
+      "Gênesis 43:29"
+    ]
+  },
+  {
+    "id": "caleb",
+    "he": "כָּלֵב",
+    "hePlain": "כלב",
+    "pt": "Calebe",
+    "translit": "Kaleb",
+    "strong": 3612,
+    "meaning": "Calebe; nome próprio de um israelita, filho de Jefoné",
+    "related": [
+      {
+        "he": "כֶּלֶב",
+        "hePlain": "כלב",
+        "translit": "keleb",
+        "pt": "cão",
+        "strong": 3611,
+        "meaning": "cão"
+      }
+    ],
+    "refs": [
+      "Números 13:6",
+      "Números 14:6",
+      "Josué 14:13"
+    ]
+  },
+  {
+    "id": "hannah",
+    "he": "חַנָּה",
+    "hePlain": "חנה",
+    "pt": "Ana",
+    "translit": "Channah",
+    "strong": 2584,
+    "meaning": "favorecida, agraciada; o nome próprio Ana",
+    "related": [
+      {
+        "he": "חָנַן",
+        "hePlain": "חנן",
+        "translit": "chanan",
+        "pt": "ser gracioso / mostrar favor",
+        "strong": 2603,
+        "meaning": "ser gracioso, favorecer, ter misericórdia"
+      }
+    ],
+    "refs": [
+      "1 Samuel 1:2",
+      "1 Samuel 1:20",
+      "1 Samuel 2:1"
+    ]
+  },
+  {
+    "id": "miriam",
+    "he": "מִרְיָם",
+    "hePlain": "מרים",
+    "pt": "Miriã",
+    "translit": "Miryam",
+    "strong": 4813,
+    "meaning": "rebeldia; forma associada à raiz de rebelião",
+    "related": [
+      {
+        "he": "מְרִי",
+        "hePlain": "מרי",
+        "translit": "meri",
+        "pt": "rebelião / rebeldia",
+        "strong": 4805,
+        "meaning": "rebelião, rebeldia"
+      }
+    ],
+    "refs": [
+      "Êxodo 15:20",
+      "Números 12:1",
+      "Números 20:1"
+    ]
+  },
+  {
+    "id": "nathan",
+    "he": "נָתָן",
+    "hePlain": "נתן",
+    "pt": "Natã",
+    "translit": "Nathan",
+    "strong": 5416,
+    "meaning": "dado; o nome próprio Natã",
+    "related": [
+      {
+        "he": "נָתַן",
+        "hePlain": "נתן",
+        "translit": "nathan",
+        "pt": "dar / conceder",
+        "strong": 5414,
+        "meaning": "dar, conceder, colocar, entregar"
+      }
+    ],
+    "refs": [
+      "2 Samuel 7:2",
+      "2 Samuel 12:1",
+      "1 Reis 1:8"
+    ]
+  },
+  {
+    "id": "jonathan",
+    "he": "יְהוֹנָתָן",
+    "hePlain": "יהונתן",
+    "pt": "Jonatan",
+    "translit": "Yehonathan",
+    "strong": 3083,
+    "meaning": "YHWH deu; o Senhor deu",
+    "related": [
+      {
+        "he": "יְהוָה",
+        "hePlain": "יהוה",
+        "translit": "YHWH",
+        "pt": "SENHOR",
+        "strong": 3068,
+        "meaning": "nome próprio do Deus de Israel"
+      },
+      {
+        "he": "נָתַן",
+        "hePlain": "נתן",
+        "translit": "nathan",
+        "pt": "dar / conceder",
+        "strong": 5414,
+        "meaning": "dar, conceder, colocar, entregar"
+      }
+    ],
+    "refs": [
+      "1 Samuel 18:1",
+      "1 Samuel 20:4",
+      "1 Samuel 31:2"
+    ]
+  },
+  {
+    "id": "goliath",
+    "he": "גָּלְיַת",
+    "hePlain": "גלית",
+    "pt": "Golias",
+    "translit": "Golyath",
+    "strong": 1555,
+    "meaning": "exílio; nome próprio de um filisteu, de etimologia incerta",
+    "related": [
+      {
+        "he": "גָּלָה",
+        "hePlain": "גלה",
+        "translit": "galah",
+        "pt": "descobrir / levar ao exílio",
+        "strong": 1540,
+        "meaning": "descobrir, revelar; remover, levar para o exílio"
+      }
+    ],
+    "refs": [
+      "1 Samuel 17:4",
+      "1 Samuel 17:23",
+      "1 Samuel 21:10"
+    ]
+  },
+  {
+    "id": "boaz",
+    "he": "בֹּעַז",
+    "hePlain": "בעז",
+    "pt": "Boaz",
+    "translit": "Boaz",
+    "strong": 1162,
+    "meaning": "rapidez; significado tradicionalmente associado também à força, embora a origem seja incerta",
+    "related": [
+      {
+        "he": "עֹז",
+        "hePlain": "עז",
+        "translit": "oz",
+        "pt": "força / poder",
+        "strong": 5797,
+        "meaning": "força, poder, vigor, fortaleza"
+      }
+    ],
+    "refs": [
+      "Rute 2:1",
+      "Rute 3:2",
+      "Rute 4:13"
+    ]
+  },
+  {
+    "id": "phinehas",
+    "he": "פִּינְחָס",
+    "hePlain": "פינחס",
+    "pt": "Fineias",
+    "translit": "Pinechas",
+    "strong": 6372,
+    "meaning": "boca de bronze; etimologia incerta",
+    "related": [
+      {
+        "he": "פֶּה",
+        "hePlain": "פה",
+        "translit": "peh",
+        "pt": "boca",
+        "strong": 6310,
+        "meaning": "boca, abertura, fala"
+      },
+      {
+        "he": "נָחָשׁ",
+        "hePlain": "נחש",
+        "translit": "nachash",
+        "pt": "serpente",
+        "strong": 5175,
+        "meaning": "serpente, cobra"
+      }
+    ],
+    "refs": [
+      "Números 25:7",
+      "1 Samuel 1:3",
+      "Juízes 20:28"
+    ]
+  },
+    {
     "id": "adam",
     "he": "אָדָם",
     "hePlain": "אדם",
