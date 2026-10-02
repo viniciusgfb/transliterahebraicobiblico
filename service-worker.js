@@ -1,5 +1,5 @@
 
-const CACHE="translitera-v1";
+const CACHE="translitera-v2";
 const ASSETS=["./","./index.html","./styles.css","./app.js","./data/banco.json","./data/letters.json","./data/marks.json","./assets/icon-192.png","./assets/icon-512.png"];
 self.addEventListener("install",e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS))));
 self.addEventListener("fetch",e=>{

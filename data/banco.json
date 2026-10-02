@@ -325,5 +325,572 @@
       "Gênesis 21:1-3",
       "Isaías 51:2"
     ]
+  },
+  {
+    "id": "joshua",
+    "he": "יְהוֹשֻׁעַ",
+    "hePlain": "יהושע",
+    "pt": "Josué",
+    "translit": "Yehoshua",
+    "strong": 3091,
+    "meaning": "YHWH é salvação",
+    "related": [
+      {
+        "he": "יְהוָה",
+        "hePlain": "יהוה",
+        "translit": "YHWH",
+        "pt": "YHWH / SENHOR",
+        "strong": 3068,
+        "meaning": "nome divino de Israel"
+      },
+      {
+        "he": "יָשַׁע",
+        "hePlain": "ישע",
+        "translit": "yasha",
+        "pt": "salvar",
+        "strong": 3467,
+        "meaning": "salvar, livrar"
+      }
+    ],
+    "refs": [
+      "Êxodo 17:9",
+      "Josué 1:1-9",
+      "Josué 24:29"
+    ]
+  },
+  {
+    "id": "samuel",
+    "he": "שְׁמוּאֵל",
+    "hePlain": "שמואל",
+    "pt": "Samuel",
+    "translit": "Shemu'el",
+    "strong": 8050,
+    "meaning": "nome de Deus / Deus ouviu",
+    "related": [
+      {
+        "he": "שֵׁם",
+        "hePlain": "שם",
+        "translit": "shem",
+        "pt": "nome",
+        "strong": 8034,
+        "meaning": "nome, reputação"
+      },
+      {
+        "he": "אֵל",
+        "hePlain": "אל",
+        "translit": "El",
+        "pt": "Deus / poderoso",
+        "strong": 410,
+        "meaning": "Deus, poderoso"
+      }
+    ],
+    "refs": [
+      "1 Samuel 1:20",
+      "1 Samuel 3:19-21",
+      "1 Samuel 12:1"
+    ]
+  },
+  {
+    "id": "jonathan",
+    "he": "יוֹנָתָן",
+    "hePlain": "יונתן",
+    "pt": "Jônatas",
+    "translit": "Yonatan",
+    "strong": 3083,
+    "meaning": "YHWH deu",
+    "related": [
+      {
+        "he": "נָתַן",
+        "hePlain": "נתן",
+        "translit": "natan",
+        "pt": "dar",
+        "strong": 5414,
+        "meaning": "dar, colocar, entregar"
+      },
+      {
+        "he": "יְהוָה",
+        "hePlain": "יהוה",
+        "translit": "YHWH",
+        "pt": "YHWH / SENHOR",
+        "strong": 3068,
+        "meaning": "nome divino de Israel"
+      }
+    ],
+    "refs": [
+      "1 Samuel 13:2",
+      "1 Samuel 18:1-4",
+      "1 Samuel 20:17"
+    ]
+  },
+  {
+    "id": "saul",
+    "he": "שָׁאוּל",
+    "hePlain": "שאול",
+    "pt": "Saul",
+    "translit": "Shaul",
+    "strong": 7586,
+    "meaning": "pedido / solicitado",
+    "related": [
+      {
+        "he": "שָׁאַל",
+        "hePlain": "שאל",
+        "translit": "sha'al",
+        "pt": "pedir / perguntar",
+        "strong": 7592,
+        "meaning": "pedir, perguntar, solicitar"
+      }
+    ],
+    "refs": [
+      "1 Samuel 9:2",
+      "1 Samuel 10:1",
+      "1 Samuel 31:1-6"
+    ]
+  },
+  {
+    "id": "gideon",
+    "he": "גִּדְעוֹן",
+    "hePlain": "גדעון",
+    "pt": "Gideão",
+    "translit": "Gid'on",
+    "strong": 1439,
+    "meaning": "cortador / aquele que derruba",
+    "related": [
+      {
+        "he": "גָּדַע",
+        "hePlain": "גדע",
+        "translit": "gada",
+        "pt": "cortar / derrubar",
+        "strong": 1438,
+        "meaning": "cortar, derrubar"
+      }
+    ],
+    "refs": [
+      "Juízes 6:11-24",
+      "Juízes 7:1-25",
+      "Juízes 8:28"
+    ]
+  },
+  {
+    "id": "deborah",
+    "he": "דְּבוֹרָה",
+    "hePlain": "דבורה",
+    "pt": "Débora",
+    "translit": "Devorah",
+    "strong": 1683,
+    "meaning": "abelha",
+    "related": [
+      {
+        "he": "דְּבוֹרָה",
+        "hePlain": "דבורה",
+        "translit": "devorah",
+        "pt": "abelha",
+        "strong": 1682,
+        "meaning": "abelha"
+      }
+    ],
+    "refs": [
+      "Juízes 4:4-5",
+      "Juízes 5:1-31"
+    ]
+  },
+  {
+    "id": "elijah",
+    "he": "אֵלִיָּהוּ",
+    "hePlain": "אליהו",
+    "pt": "Elias",
+    "translit": "Eliyahu",
+    "strong": 452,
+    "meaning": "meu Deus é YHWH",
+    "related": [
+      {
+        "he": "אֵל",
+        "hePlain": "אל",
+        "translit": "El",
+        "pt": "Deus / poderoso",
+        "strong": 410,
+        "meaning": "Deus, poderoso"
+      },
+      {
+        "he": "יָהּ",
+        "hePlain": "יה",
+        "translit": "Yah",
+        "pt": "YHWH",
+        "strong": 3050,
+        "meaning": "forma abreviada do nome divino"
+      }
+    ],
+    "refs": [
+      "1 Reis 17:1",
+      "1 Reis 18:36-39",
+      "2 Reis 2:11"
+    ]
+  },
+  {
+    "id": "elisha",
+    "he": "אֱלִישָׁע",
+    "hePlain": "אלישע",
+    "pt": "Eliseu",
+    "translit": "Elisha",
+    "strong": 477,
+    "meaning": "Deus é salvação",
+    "related": [
+      {
+        "he": "אֵל",
+        "hePlain": "אל",
+        "translit": "El",
+        "pt": "Deus / poderoso",
+        "strong": 410,
+        "meaning": "Deus, poderoso"
+      },
+      {
+        "he": "יָשַׁע",
+        "hePlain": "ישע",
+        "translit": "yasha",
+        "pt": "salvar",
+        "strong": 3467,
+        "meaning": "salvar, livrar"
+      }
+    ],
+    "refs": [
+      "1 Reis 19:16",
+      "2 Reis 2:9-15",
+      "2 Reis 5:8-14"
+    ]
+  },
+  {
+    "id": "isaiah",
+    "he": "יְשַׁעְיָהוּ",
+    "hePlain": "ישעיהו",
+    "pt": "Isaías",
+    "translit": "Yesha'yahu",
+    "strong": 3470,
+    "meaning": "YHWH é salvação",
+    "related": [
+      {
+        "he": "יָשַׁע",
+        "hePlain": "ישע",
+        "translit": "yasha",
+        "pt": "salvar",
+        "strong": 3467,
+        "meaning": "salvar, livrar"
+      },
+      {
+        "he": "יָהּ",
+        "hePlain": "יה",
+        "translit": "Yah",
+        "pt": "YHWH",
+        "strong": 3050,
+        "meaning": "forma abreviada do nome divino"
+      }
+    ],
+    "refs": [
+      "Isaías 1:1",
+      "Isaías 6:1-8",
+      "Isaías 53:1"
+    ]
+  },
+  {
+    "id": "jeremiah",
+    "he": "יִרְמְיָהוּ",
+    "hePlain": "ירמיהו",
+    "pt": "Jeremias",
+    "translit": "Yirmeyahu",
+    "strong": 3414,
+    "meaning": "YHWH exalta / estabelece",
+    "related": [
+      {
+        "he": "רוּם",
+        "hePlain": "רום",
+        "translit": "rum",
+        "pt": "elevar / exaltar",
+        "strong": 7311,
+        "meaning": "ser alto, elevar"
+      },
+      {
+        "he": "יָהּ",
+        "hePlain": "יה",
+        "translit": "Yah",
+        "pt": "YHWH",
+        "strong": 3050,
+        "meaning": "forma abreviada do nome divino"
+      }
+    ],
+    "refs": [
+      "Jeremias 1:1-10",
+      "Jeremias 7:1-7",
+      "Jeremias 20:7-13"
+    ]
+  },
+  {
+    "id": "ezekiel",
+    "he": "יְחֶזְקֵאל",
+    "hePlain": "יחזקאל",
+    "pt": "Ezequiel",
+    "translit": "Yechezqel",
+    "strong": 3168,
+    "meaning": "Deus fortalece",
+    "related": [
+      {
+        "he": "חָזַק",
+        "hePlain": "חזק",
+        "translit": "chazaq",
+        "pt": "ser forte / fortalecer",
+        "strong": 2388,
+        "meaning": "ser forte, fortalecer"
+      },
+      {
+        "he": "אֵל",
+        "hePlain": "אל",
+        "translit": "El",
+        "pt": "Deus / poderoso",
+        "strong": 410,
+        "meaning": "Deus, poderoso"
+      }
+    ],
+    "refs": [
+      "Ezequiel 1:1-3",
+      "Ezequiel 2:1-3",
+      "Ezequiel 37:1-14"
+    ]
+  },
+  {
+    "id": "daniel",
+    "he": "דָּנִיֵּאל",
+    "hePlain": "דניאל",
+    "pt": "Daniel",
+    "translit": "Daniyyel",
+    "strong": 1840,
+    "meaning": "Deus é meu juiz",
+    "related": [
+      {
+        "he": "דִּין",
+        "hePlain": "דין",
+        "translit": "din",
+        "pt": "julgar / julgamento",
+        "strong": 1777,
+        "meaning": "julgar, contender"
+      },
+      {
+        "he": "אֵל",
+        "hePlain": "אל",
+        "translit": "El",
+        "pt": "Deus / poderoso",
+        "strong": 410,
+        "meaning": "Deus, poderoso"
+      }
+    ],
+    "refs": [
+      "Daniel 1:6-7",
+      "Daniel 2:20-23",
+      "Daniel 6:10-23"
+    ]
+  },
+  {
+    "id": "job",
+    "he": "אִיּוֹב",
+    "hePlain": "איוב",
+    "pt": "Jó",
+    "translit": "Iyov",
+    "strong": 347,
+    "meaning": "onde está o pai? / perseguido (etimologias lexicais propostas)",
+    "related": [
+      {
+        "he": "אָב",
+        "hePlain": "אב",
+        "translit": "av",
+        "pt": "pai",
+        "strong": 1,
+        "meaning": "pai, antepassado"
+      }
+    ],
+    "refs": [
+      "Jó 1:1",
+      "Jó 2:1-10",
+      "Jó 42:10-17"
+    ]
+  },
+  {
+    "id": "jonah",
+    "he": "יוֹנָה",
+    "hePlain": "יונה",
+    "pt": "Jonas",
+    "translit": "Yonah",
+    "strong": 3124,
+    "meaning": "pomba",
+    "related": [
+      {
+        "he": "יוֹנָה",
+        "hePlain": "יונה",
+        "translit": "yonah",
+        "pt": "pomba",
+        "strong": 3123,
+        "meaning": "pomba"
+      }
+    ],
+    "refs": [
+      "Jonas 1:1-3",
+      "Jonas 2:1-10",
+      "Jonas 4:10-11"
+    ]
+  },
+  {
+    "id": "ruth",
+    "he": "רוּת",
+    "hePlain": "רות",
+    "pt": "Rute",
+    "translit": "Rut",
+    "strong": 7327,
+    "meaning": "amizade / companheira (sentido tradicional)",
+    "related": [
+      {
+        "he": "רֵעַ",
+        "hePlain": "רע",
+        "translit": "rea",
+        "pt": "amigo / companheiro",
+        "strong": 7453,
+        "meaning": "amigo, próximo, companheiro"
+      }
+    ],
+    "refs": [
+      "Rute 1:16-17",
+      "Rute 2:10-13",
+      "Rute 4:13-17"
+    ]
+  },
+  {
+    "id": "esther",
+    "he": "אֶסְתֵּר",
+    "hePlain": "אסתר",
+    "pt": "Ester",
+    "translit": "Ester",
+    "strong": 635,
+    "meaning": "Estrela / Hadassa em relação ao nome persa",
+    "related": [
+      {
+        "he": "הֲדַסָּה",
+        "hePlain": "הדסה",
+        "translit": "Hadassah",
+        "pt": "murta",
+        "strong": 1919,
+        "meaning": "murta"
+      }
+    ],
+    "refs": [
+      "Ester 2:7",
+      "Ester 4:14-16",
+      "Ester 7:3-6"
+    ]
+  },
+  {
+    "id": "mordecai",
+    "he": "מָרְדֳּכַי",
+    "hePlain": "מרדכי",
+    "pt": "Mardoqueu",
+    "translit": "Mordekhai",
+    "strong": 4782,
+    "meaning": "relacionado ao nome do deus babilônico Marduque",
+    "related": [
+      {
+        "he": "מַרְדֹּךְ",
+        "hePlain": "מרדך",
+        "translit": "Mardok",
+        "pt": "Marduque",
+        "strong": 4757,
+        "meaning": "nome de divindade babilônica"
+      }
+    ],
+    "refs": [
+      "Ester 2:5-7",
+      "Ester 4:1-17",
+      "Ester 8:15-17"
+    ]
+  },
+  {
+    "id": "ezra",
+    "he": "עֶזְרָא",
+    "hePlain": "עזרא",
+    "pt": "Esdras",
+    "translit": "Ezra",
+    "strong": 5830,
+    "meaning": "ajuda",
+    "related": [
+      {
+        "he": "עָזַר",
+        "hePlain": "עזר",
+        "translit": "azar",
+        "pt": "ajudar",
+        "strong": 5826,
+        "meaning": "ajudar, socorrer"
+      }
+    ],
+    "refs": [
+      "Esdras 7:1-10",
+      "Esdras 8:21-23",
+      "Neemias 8:1-8"
+    ]
+  },
+  {
+    "id": "nehemiah",
+    "he": "נְחֶמְיָה",
+    "hePlain": "נחמיה",
+    "pt": "Neemias",
+    "translit": "Nechemyah",
+    "strong": 5166,
+    "meaning": "YHWH consola",
+    "related": [
+      {
+        "he": "נָחַם",
+        "hePlain": "נחם",
+        "translit": "nacham",
+        "pt": "consolar / arrepender-se",
+        "strong": 5162,
+        "meaning": "consolar, ter compaixão"
+      },
+      {
+        "he": "יָהּ",
+        "hePlain": "יה",
+        "translit": "Yah",
+        "pt": "YHWH",
+        "strong": 3050,
+        "meaning": "forma abreviada do nome divino"
+      }
+    ],
+    "refs": [
+      "Neemias 1:1-11",
+      "Neemias 2:1-8",
+      "Neemias 8:1-9"
+    ]
+  },
+  {
+    "id": "zechariah",
+    "he": "זְכַרְיָה",
+    "hePlain": "זכריה",
+    "pt": "Zacarias",
+    "translit": "Zekharyah",
+    "strong": 2148,
+    "meaning": "YHWH se lembrou",
+    "related": [
+      {
+        "he": "זָכַר",
+        "hePlain": "זכר",
+        "translit": "zakhar",
+        "pt": "lembrar-se",
+        "strong": 2142,
+        "meaning": "lembrar, recordar"
+      },
+      {
+        "he": "יָהּ",
+        "hePlain": "יה",
+        "translit": "Yah",
+        "pt": "YHWH",
+        "strong": 3050,
+        "meaning": "forma abreviada do nome divino"
+      }
+    ],
+    "refs": [
+      "Zacarias 1:1",
+      "Zacarias 8:1-8",
+      "Esdras 5:1"
+    ]
   }
 ]
