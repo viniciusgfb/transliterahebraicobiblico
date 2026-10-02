@@ -1,5 +1,531 @@
 [
   {
+    "id": "aaron",
+    "he": "אַהֲרֹן",
+    "hePlain": "אהרן",
+    "pt": "Arão",
+    "translit": "Aharon",
+    "strong": 175,
+    "meaning": "Arão; significado etimológico incerto; irmão de Moisés",
+    "related": [
+      {
+        "he": "כֹּהֵן",
+        "hePlain": "כהן",
+        "translit": "kohen",
+        "pt": "sacerdote",
+        "strong": 3548,
+        "meaning": "sacerdote, ministro"
+      }
+    ],
+    "refs": [
+      "Êxodo 4:14",
+      "Êxodo 7:7",
+      "Números 20:24"
+    ]
+  },
+  {
+    "id": "abigail",
+    "he": "אֲבִיגַיִל",
+    "hePlain": "אביגיל",
+    "pt": "Abigail",
+    "translit": "Abigayil",
+    "strong": 26,
+    "meaning": "meu pai é alegria; fonte de alegria",
+    "related": [
+      {
+        "he": "אָב",
+        "hePlain": "אב",
+        "translit": "av",
+        "pt": "pai",
+        "strong": 1,
+        "meaning": "pai, ancestral, chefe"
+      },
+      {
+        "he": "גִּיל",
+        "hePlain": "גיל",
+        "translit": "gil",
+        "pt": "alegrar-se / alegria",
+        "strong": 1524,
+        "meaning": "alegria, regozijo"
+      }
+    ],
+    "refs": [
+      "1 Samuel 25:3",
+      "1 Samuel 25:32",
+      "2 Samuel 2:2"
+    ]
+  },
+  {
+    "id": "hagar",
+    "he": "הָגָר",
+    "hePlain": "הגר",
+    "pt": "Agar",
+    "translit": "Hagar",
+    "strong": 1904,
+    "meaning": "Agar; nome de origem incerta, possivelmente estrangeira",
+    "related": [],
+    "refs": [
+      "Gênesis 16:1",
+      "Gênesis 16:15",
+      "Gênesis 21:9"
+    ]
+  },
+  {
+    "id": "rebekah",
+    "he": "רִבְקָה",
+    "hePlain": "רבקה",
+    "pt": "Rebeca",
+    "translit": "Ribqah",
+    "strong": 7259,
+    "meaning": "aquela que prende ou une; esposa de Isaque",
+    "related": [],
+    "refs": [
+      "Gênesis 24:15",
+      "Gênesis 24:67",
+      "Gênesis 25:20"
+    ]
+  },
+  {
+    "id": "leah",
+    "he": "לֵאָה",
+    "hePlain": "לאה",
+    "pt": "Léia",
+    "translit": "Le'ah",
+    "strong": 3812,
+    "meaning": "cansada; esposa de Jacó",
+    "related": [
+      {
+        "he": "לָאָה",
+        "hePlain": "לאה",
+        "translit": "la'ah",
+        "pt": "estar cansado",
+        "strong": 3811,
+        "meaning": "estar cansado, fatigado"
+      }
+    ],
+    "refs": [
+      "Gênesis 29:16",
+      "Gênesis 29:23",
+      "Gênesis 30:17"
+    ]
+  },
+  {
+    "id": "rachel",
+    "he": "רָחֵל",
+    "hePlain": "רחל",
+    "pt": "Raquel",
+    "translit": "Rachel",
+    "strong": 7354,
+    "meaning": "ovelha, cordeira; esposa de Jacó",
+    "related": [
+      {
+        "he": "רָחֵל",
+        "hePlain": "רחל",
+        "translit": "rachel",
+        "pt": "ovelha",
+        "strong": 7353,
+        "meaning": "ovelha, fêmea do rebanho"
+      }
+    ],
+    "refs": [
+      "Gênesis 29:6",
+      "Gênesis 29:28",
+      "Gênesis 30:22"
+    ]
+  },
+  {
+    "id": "tamar",
+    "he": "תָּמָר",
+    "hePlain": "תמר",
+    "pt": "Tamar",
+    "translit": "Tamar",
+    "strong": 8559,
+    "meaning": "palmeira; nome de várias mulheres bíblicas",
+    "related": [
+      {
+        "he": "תָּמָר",
+        "hePlain": "תמר",
+        "translit": "tamar",
+        "pt": "palmeira",
+        "strong": 8558,
+        "meaning": "palmeira, árvore de tâmaras"
+      }
+    ],
+    "refs": [
+      "Gênesis 38:6",
+      "2 Samuel 13:1",
+      "2 Samuel 14:27"
+    ]
+  },
+  {
+    "id": "bathsheba",
+    "he": "בַּת־שֶׁבַע",
+    "hePlain": "בת שבע",
+    "pt": "Bate-Seba",
+    "translit": "Bath-Sheba",
+    "strong": 1339,
+    "meaning": "filha do juramento; mãe de Salomão",
+    "related": [
+      {
+        "he": "בַּת",
+        "hePlain": "בת",
+        "translit": "bath",
+        "pt": "filha",
+        "strong": 1323,
+        "meaning": "filha, descendente"
+      },
+      {
+        "he": "שֶׁבַע",
+        "hePlain": "שבע",
+        "translit": "sheba",
+        "pt": "sete / juramento",
+        "strong": 7651,
+        "meaning": "sete; relacionado ao conceito de juramento"
+      }
+    ],
+    "refs": [
+      "2 Samuel 11:3",
+      "2 Samuel 12:24",
+      "1 Reis 1:11"
+    ]
+  },
+  {
+    "id": "amnon",
+    "he": "אַמְנוֹן",
+    "hePlain": "אמנון",
+    "pt": "Amnom",
+    "translit": "Amnon",
+    "strong": 550,
+    "meaning": "fiel, digno de confiança; filho de Davi",
+    "related": [
+      {
+        "he": "אָמַן",
+        "hePlain": "אמן",
+        "translit": "aman",
+        "pt": "ser fiel / confiar",
+        "strong": 539,
+        "meaning": "ser firme, fiel, confiável"
+      }
+    ],
+    "refs": [
+      "2 Samuel 3:2",
+      "2 Samuel 13:1",
+      "1 Crônicas 3:1"
+    ]
+  },
+  {
+    "id": "samson",
+    "he": "שִׁמְשׁוֹן",
+    "hePlain": "שמשון",
+    "pt": "Sansão",
+    "translit": "Shimshon",
+    "strong": 8123,
+    "meaning": "como o sol; luz solar",
+    "related": [
+      {
+        "he": "שֶׁמֶשׁ",
+        "hePlain": "שמש",
+        "translit": "shemesh",
+        "pt": "sol",
+        "strong": 8121,
+        "meaning": "sol, luz solar"
+      }
+    ],
+    "refs": [
+      "Juízes 13:24",
+      "Juízes 14:1",
+      "Juízes 16:28"
+    ]
+  },
+  {
+    "id": "ehud",
+    "he": "אֵהוּד",
+    "hePlain": "אהוד",
+    "pt": "Eúde",
+    "translit": "Ehuwd",
+    "strong": 164,
+    "meaning": "unido; nome de um juiz israelita",
+    "related": [
+      {
+        "he": "אוֹהַד",
+        "hePlain": "אוהד",
+        "translit": "Ohad",
+        "pt": "unido",
+        "strong": 161,
+        "meaning": "unido, união"
+      }
+    ],
+    "refs": [
+      "Juízes 3:15",
+      "Juízes 3:20",
+      "Juízes 3:26"
+    ]
+  },
+  {
+    "id": "jephthah",
+    "he": "יִפְתָּח",
+    "hePlain": "יפתח",
+    "pt": "Jefté",
+    "translit": "Yiphtach",
+    "strong": 3316,
+    "meaning": "ele abrirá; aquele que abre",
+    "related": [
+      {
+        "he": "פָּתַח",
+        "hePlain": "פתח",
+        "translit": "pathach",
+        "pt": "abrir",
+        "strong": 6605,
+        "meaning": "abrir, soltar, libertar"
+      }
+    ],
+    "refs": [
+      "Juízes 11:1",
+      "Juízes 11:30",
+      "Juízes 12:7"
+    ]
+  },
+  {
+    "id": "jeroboam",
+    "he": "יָרָבְעָם",
+    "hePlain": "ירבעם",
+    "pt": "Jeroboão",
+    "translit": "Yarobam",
+    "strong": 3379,
+    "meaning": "o povo contendirá; também interpretado como o povo aumenta",
+    "related": [
+      {
+        "he": "רִיב",
+        "hePlain": "ריב",
+        "translit": "riyb",
+        "pt": "contender / disputar",
+        "strong": 7378,
+        "meaning": "contender, disputar, pleitear"
+      },
+      {
+        "he": "עַם",
+        "hePlain": "עם",
+        "translit": "am",
+        "pt": "povo",
+        "strong": 5971,
+        "meaning": "povo, nação, grupo de pessoas"
+      }
+    ],
+    "refs": [
+      "1 Reis 11:26",
+      "1 Reis 12:20",
+      "1 Reis 14:10"
+    ]
+  },
+  {
+    "id": "rehoboam",
+    "he": "רְחַבְעָם",
+    "hePlain": "רחבעם",
+    "pt": "Roboão",
+    "translit": "Rechabam",
+    "strong": 7346,
+    "meaning": "o povo se alargou; aquele que amplia o povo",
+    "related": [
+      {
+        "he": "רָחַב",
+        "hePlain": "רחב",
+        "translit": "rachab",
+        "pt": "alargar / ampliar",
+        "strong": 7337,
+        "meaning": "ser largo, ampliar, aumentar"
+      },
+      {
+        "he": "עַם",
+        "hePlain": "עם",
+        "translit": "am",
+        "pt": "povo",
+        "strong": 5971,
+        "meaning": "povo, nação"
+      }
+    ],
+    "refs": [
+      "1 Reis 11:43",
+      "1 Reis 12:1",
+      "1 Reis 12:20"
+    ]
+  },
+  {
+    "id": "manasseh",
+    "he": "מְנַשֶּׁה",
+    "hePlain": "מנשה",
+    "pt": "Manassés",
+    "translit": "Menashsheh",
+    "strong": 4519,
+    "meaning": "aquele que faz esquecer; fazendo esquecer",
+    "related": [
+      {
+        "he": "נָשָׁה",
+        "hePlain": "נשה",
+        "translit": "nashah",
+        "pt": "esquecer",
+        "strong": 5382,
+        "meaning": "esquecer, fazer esquecer"
+      }
+    ],
+    "refs": [
+      "Gênesis 41:51",
+      "Gênesis 48:1",
+      "Gênesis 48:13"
+    ]
+  },
+  {
+    "id": "ephraim",
+    "he": "אֶפְרַיִם",
+    "hePlain": "אפרים",
+    "pt": "Efraim",
+    "translit": "Ephrayim",
+    "strong": 669,
+    "meaning": "duplamente frutífero; segundo filho de José",
+    "related": [
+      {
+        "he": "פָּרָה",
+        "hePlain": "פרה",
+        "translit": "parah",
+        "pt": "frutificar / ser fecundo",
+        "strong": 6509,
+        "meaning": "ser frutífero, multiplicar, produzir fruto"
+      }
+    ],
+    "refs": [
+      "Gênesis 41:52",
+      "Gênesis 48:1",
+      "Gênesis 48:20"
+    ]
+  },
+  {
+    "id": "elkanah",
+    "he": "אֶלְקָנָה",
+    "hePlain": "אלקנה",
+    "pt": "Elcana",
+    "translit": "Elqanah",
+    "strong": 511,
+    "meaning": "Deus adquiriu; Deus tomou posse",
+    "related": [
+      {
+        "he": "אֵל",
+        "hePlain": "אל",
+        "translit": "El",
+        "pt": "Deus",
+        "strong": 410,
+        "meaning": "Deus, o Deus poderoso"
+      },
+      {
+        "he": "קָנָה",
+        "hePlain": "קנה",
+        "translit": "qanah",
+        "pt": "adquirir / possuir",
+        "strong": 7069,
+        "meaning": "adquirir, comprar, possuir"
+      }
+    ],
+    "refs": [
+      "1 Samuel 1:1",
+      "1 Samuel 1:3",
+      "1 Samuel 2:20"
+    ]
+  },
+  {
+    "id": "micaiah",
+    "he": "מִיכָיְהוּ",
+    "hePlain": "מיכיהו",
+    "pt": "Micaías",
+    "translit": "Mikayehu",
+    "strong": 4321,
+    "meaning": "quem é como Yahweh?",
+    "related": [
+      {
+        "he": "מִי",
+        "hePlain": "מי",
+        "translit": "mi",
+        "pt": "quem",
+        "strong": 4310,
+        "meaning": "quem? qual pessoa?"
+      },
+      {
+        "he": "יָהּ",
+        "hePlain": "יה",
+        "translit": "Yah",
+        "pt": "Yah / SENHOR",
+        "strong": 3050,
+        "meaning": "forma abreviada do nome divino Yahweh"
+      }
+    ],
+    "refs": [
+      "1 Reis 22:8",
+      "1 Reis 22:14",
+      "2 Crônicas 18:7"
+    ]
+  },
+  {
+    "id": "micah",
+    "he": "מִיכָה",
+    "hePlain": "מיכה",
+    "pt": "Miqueias",
+    "translit": "Mikah",
+    "strong": 4318,
+    "meaning": "quem é como Yahweh?",
+    "related": [
+      {
+        "he": "מִי",
+        "hePlain": "מי",
+        "translit": "mi",
+        "pt": "quem",
+        "strong": 4310,
+        "meaning": "quem? qual pessoa?"
+      },
+      {
+        "he": "יָהּ",
+        "hePlain": "יה",
+        "translit": "Yah",
+        "pt": "Yah / SENHOR",
+        "strong": 3050,
+        "meaning": "forma abreviada do nome divino Yahweh"
+      }
+    ],
+    "refs": [
+      "Juízes 17:1",
+      "Miqueias 1:1",
+      "Miqueias 6:8"
+    ]
+  },
+  {
+    "id": "abimelech",
+    "he": "אֲבִימֶלֶךְ",
+    "hePlain": "אבימלך",
+    "pt": "Abimeleque",
+    "translit": "Abiymelek",
+    "strong": 40,
+    "meaning": "pai do rei; meu pai é rei",
+    "related": [
+      {
+        "he": "אָב",
+        "hePlain": "אב",
+        "translit": "av",
+        "pt": "pai",
+        "strong": 1,
+        "meaning": "pai, ancestral"
+      },
+      {
+        "he": "מֶלֶךְ",
+        "hePlain": "מלך",
+        "translit": "melek",
+        "pt": "rei",
+        "strong": 4428,
+        "meaning": "rei, governante"
+      }
+    ],
+    "refs": [
+      "Gênesis 20:2",
+      "Gênesis 20:3",
+      "Gênesis 26:1"
+    ]
+  },
+  {
     "id": "joseph",
     "he": "יוֹסֵף",
     "hePlain": "יוסף",
