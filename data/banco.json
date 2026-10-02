@@ -1,0 +1,329 @@
+[
+  {
+    "id": "adam",
+    "he": "אָדָם",
+    "hePlain": "אדם",
+    "pt": "Adão",
+    "translit": "Adam",
+    "strong": 120,
+    "meaning": "homem, humanidade; o nome próprio Adão",
+    "related": [
+      {
+        "he": "אָדָם",
+        "hePlain": "אדם",
+        "translit": "adam",
+        "pt": "homem / humanidade",
+        "strong": 120,
+        "meaning": "ser humano"
+      },
+      {
+        "he": "אֲדָמָה",
+        "hePlain": "אדמה",
+        "translit": "adamah",
+        "pt": "solo / terra",
+        "strong": 127,
+        "meaning": "solo, terra cultivável"
+      }
+    ],
+    "refs": [
+      "Gênesis 2:7",
+      "Gênesis 2:15",
+      "Gênesis 3:20"
+    ]
+  },
+  {
+    "id": "eve",
+    "he": "חַוָּה",
+    "hePlain": "חוה",
+    "pt": "Eva",
+    "translit": "Chavvah",
+    "strong": 2332,
+    "meaning": "vida / doadora de vida",
+    "related": [
+      {
+        "he": "חַי",
+        "hePlain": "חי",
+        "translit": "chai",
+        "pt": "vivo / vida",
+        "strong": 2416,
+        "meaning": "vivo, vivente"
+      },
+      {
+        "he": "חָיָה",
+        "hePlain": "חיה",
+        "translit": "chayah",
+        "pt": "viver",
+        "strong": 2421,
+        "meaning": "viver, permanecer vivo"
+      }
+    ],
+    "refs": [
+      "Gênesis 3:20",
+      "Gênesis 4:1"
+    ]
+  },
+  {
+    "id": "noah",
+    "he": "נֹחַ",
+    "hePlain": "נח",
+    "pt": "Noé",
+    "translit": "Noach",
+    "strong": 5146,
+    "meaning": "repouso / descanso",
+    "related": [
+      {
+        "he": "נוּחַ",
+        "hePlain": "נוח",
+        "translit": "nuach",
+        "pt": "repousar / descansar",
+        "strong": 5117,
+        "meaning": "dar descanso, repousar"
+      },
+      {
+        "he": "מְנוּחָה",
+        "hePlain": "מנוחה",
+        "translit": "menuchah",
+        "pt": "repouso",
+        "strong": 4496,
+        "meaning": "lugar ou estado de descanso"
+      }
+    ],
+    "refs": [
+      "Gênesis 5:29",
+      "Gênesis 6:9",
+      "Isaías 54:9"
+    ]
+  },
+  {
+    "id": "abraham",
+    "he": "אַבְרָהָם",
+    "hePlain": "אברהם",
+    "pt": "Abraão",
+    "translit": "Avraham",
+    "strong": 85,
+    "meaning": "pai de uma multidão",
+    "related": [
+      {
+        "he": "אָב",
+        "hePlain": "אב",
+        "translit": "av",
+        "pt": "pai",
+        "strong": 1,
+        "meaning": "pai, antepassado"
+      },
+      {
+        "he": "הָמוֹן",
+        "hePlain": "המון",
+        "translit": "hamon",
+        "pt": "multidão",
+        "strong": 1995,
+        "meaning": "multidão, abundância"
+      }
+    ],
+    "refs": [
+      "Gênesis 17:5",
+      "Gênesis 18:18",
+      "Gênesis 22:17"
+    ]
+  },
+  {
+    "id": "isaac",
+    "he": "יִצְחָק",
+    "hePlain": "יצחק",
+    "pt": "Isaque",
+    "translit": "Yitschaq",
+    "strong": 3327,
+    "meaning": "ele ri / riso",
+    "related": [
+      {
+        "he": "צָחַק",
+        "hePlain": "צחק",
+        "translit": "tsachaq",
+        "pt": "rir",
+        "strong": 6711,
+        "meaning": "rir, brincar, zombar"
+      }
+    ],
+    "refs": [
+      "Gênesis 17:19",
+      "Gênesis 18:12",
+      "Gênesis 21:3-6"
+    ]
+  },
+  {
+    "id": "jacob",
+    "he": "יַעֲקֹב",
+    "hePlain": "יעקב",
+    "pt": "Jacó",
+    "translit": "Yaʿaqov",
+    "strong": 3290,
+    "meaning": "aquele que segura o calcanhar; suplantador",
+    "related": [
+      {
+        "he": "עָקַב",
+        "hePlain": "עקב",
+        "translit": "aqav",
+        "pt": "seguir pelo calcanhar / suplantar",
+        "strong": 6117,
+        "meaning": "agarrar pelo calcanhar, suplantar"
+      },
+      {
+        "he": "עָקֵב",
+        "hePlain": "עקב",
+        "translit": "aqev",
+        "pt": "calcanhar",
+        "strong": 6119,
+        "meaning": "calcanhar, parte posterior do pé"
+      }
+    ],
+    "refs": [
+      "Gênesis 25:26",
+      "Gênesis 27:36",
+      "Oséias 12:3-4"
+    ]
+  },
+  {
+    "id": "israel",
+    "he": "יִשְׂרָאֵל",
+    "hePlain": "ישראל",
+    "pt": "Israel",
+    "translit": "Yisra'el",
+    "strong": 3478,
+    "meaning": "Deus contende / Deus persevera (etimologia tradicional do léxico)",
+    "related": [
+      {
+        "he": "שָׂרָה",
+        "hePlain": "שרה",
+        "translit": "sarah",
+        "pt": "contender / perseverar",
+        "strong": 8280,
+        "meaning": "persistir, lutar, prevalecer"
+      },
+      {
+        "he": "אֵל",
+        "hePlain": "אל",
+        "translit": "El",
+        "pt": "Deus / poderoso",
+        "strong": 410,
+        "meaning": "Deus, poderoso"
+      }
+    ],
+    "refs": [
+      "Gênesis 32:28",
+      "Gênesis 35:10",
+      "Êxodo 4:22"
+    ]
+  },
+  {
+    "id": "moses",
+    "he": "מֹשֶׁה",
+    "hePlain": "משה",
+    "pt": "Moisés",
+    "translit": "Mosheh",
+    "strong": 4872,
+    "meaning": "tirado / retirado (associado ao verbo “tirar” nas tradições lexicais bíblicas)",
+    "related": [
+      {
+        "he": "מָשָׁה",
+        "hePlain": "משה",
+        "translit": "mashah",
+        "pt": "tirar / puxar para fora",
+        "strong": 4871,
+        "meaning": "tirar, puxar para fora"
+      }
+    ],
+    "refs": [
+      "Êxodo 2:10",
+      "Êxodo 3:1-10",
+      "Deuteronômio 34:5"
+    ]
+  },
+  {
+    "id": "david",
+    "he": "דָּוִד",
+    "hePlain": "דוד",
+    "pt": "Davi",
+    "translit": "David",
+    "strong": 1732,
+    "meaning": "amado",
+    "related": [
+      {
+        "he": "דּוֹד",
+        "hePlain": "דוד",
+        "translit": "dod",
+        "pt": "amado / tio",
+        "strong": 1730,
+        "meaning": "amado; também tio em certos contextos"
+      }
+    ],
+    "refs": [
+      "1 Samuel 16:13",
+      "2 Samuel 7:12-16",
+      "Salmo 89:20"
+    ]
+  },
+  {
+    "id": "solomon",
+    "he": "שְׁלֹמֹה",
+    "hePlain": "שלמה",
+    "pt": "Salomão",
+    "translit": "Shlomoh",
+    "strong": 8010,
+    "meaning": "pacífico / relacionado a paz",
+    "related": [
+      {
+        "he": "שָׁלוֹם",
+        "hePlain": "שלום",
+        "translit": "shalom",
+        "pt": "paz / bem-estar",
+        "strong": 7965,
+        "meaning": "paz, integridade, bem-estar"
+      },
+      {
+        "he": "שָׁלֵם",
+        "hePlain": "שלם",
+        "translit": "shalem",
+        "pt": "completo / inteiro",
+        "strong": 8003,
+        "meaning": "inteiro, completo, em paz"
+      }
+    ],
+    "refs": [
+      "2 Samuel 12:24",
+      "1 Reis 3:5-12",
+      "1 Reis 4:20-25"
+    ]
+  },
+  {
+    "id": "sarah",
+    "he": "שָׂרָה",
+    "hePlain": "שרה",
+    "pt": "Sara",
+    "translit": "Sarah",
+    "strong": 8283,
+    "meaning": "princesa / nobre",
+    "related": [
+      {
+        "he": "שַׂר",
+        "hePlain": "שר",
+        "translit": "sar",
+        "pt": "príncipe / chefe",
+        "strong": 8269,
+        "meaning": "príncipe, governante, chefe"
+      },
+      {
+        "he": "שָׂרָה",
+        "hePlain": "שרה",
+        "translit": "sarah",
+        "pt": "contender / perseverar",
+        "strong": 8280,
+        "meaning": "persistir, esforçar-se, prevalecer"
+      }
+    ],
+    "refs": [
+      "Gênesis 17:15-16",
+      "Gênesis 21:1-3",
+      "Isaías 51:2"
+    ]
+  }
+]
