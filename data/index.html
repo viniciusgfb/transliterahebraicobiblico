@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#20170e">
+  <meta name="description" content="Translitera - Hebraico bíblico: jogo para aprender letras, sinais e transliteração de palavras bíblicas.">
+  <title>Translitera - Hebraico bíblico</title>
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button id="menuBtn" class="icon-btn" aria-label="Abrir menu">☰</button>
+      <div class="brand">
+        <img src="assets/icon-192.png" alt="" class="brand-icon">
+        <div><strong>Translitera</strong><span>Hebraico bíblico</span></div>
+      </div>
+      <div class="counter" aria-label="Palavras concluídas"><span id="score">0</span><small>/ <span id="total">0</span></small></div>
+    </header>
+
+    <main>
+      <section id="homeView" class="view active">
+        <div class="hero-card">
+          <p class="eyebrow">APRENDA JOGANDO</p>
+          <h1>Translitera - Hebraico bíblico</h1>
+          <p class="lead">Aprenda a reconhecer letras, sinais e a transliterar nomes e palavras do hebraico bíblico.</p>
+          <div class="home-actions">
+            <button id="startBtn" class="primary big">Começar uma palavra <span>→</span></button>
+          </div>
+          <div class="home-links">
+            <button data-view="names" class="text-link">Nomes cadastrados</button>
+            <button data-view="letters" class="text-link">Letras hebraicas</button>
+            <button data-view="marks" class="text-link">Vogais</button>
+          </div>
+        </div>
+        <div class="tip"><strong>Dica:</strong> a seta ao lado do hebraico lembra que a leitura é da direita para a esquerda.</div>
+      </section>
+
+      <section id="gameView" class="view">
+        <div class="game-head">
+          <button id="backHomeBtn" class="ghost">← Menu</button>
+          <span id="gameStep" class="pill">Letra</span>
+        </div>
+        <div class="word-card">
+          <div class="direction"><span>←</span> leia da direita para a esquerda</div>
+          <div id="hebrewWord" class="hebrew-word" dir="rtl"></div>
+          <div id="translitPreview" class="translit-preview">—</div>
+        </div>
+        <div class="question">
+          <p id="questionLabel">Qual é a transliteração desta letra?</p>
+          <div id="targetDisplay" class="target-display"></div>
+          <div id="options" class="options" role="group" aria-label="Opções de resposta"></div>
+          <p id="feedback" class="feedback" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section id="resultView" class="view">
+        <div class="result-card">
+          <div class="success-mark">✓</div>
+          <p id="resultEyebrow" class="eyebrow">PALAVRA CONCLUÍDA</p>
+          <div id="resultHebrew" class="result-hebrew" dir="rtl"></div>
+          <div id="resultTranslit" class="result-translit"></div>
+          <h2 id="resultName"></h2>
+          <p id="resultMeaning" class="result-meaning"></p>
+          <div class="related" id="relatedSection">
+            <h3>Palavras relacionadas</h3>
+            <p class="related-help">Toque em uma palavra para praticar sua transliteração.</p>
+            <div id="relatedList"></div>
+          </div>
+          <div class="refs"><strong>Referências:</strong> <span id="resultRefs"></span></div>
+          <button id="nextBtn" class="primary big">Próxima palavra <span>→</span></button>
+          <button id="returnParentBtn" class="secondary big hidden">Voltar ao nome</button>
+          <button id="resultHomeBtn" class="text-link">Voltar ao menu</button>
+        </div>
+      </section>
+
+      <section id="namesView" class="view study-view">
+        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">BANCO</p><h2>Nomes adicionados</h2></div></div>
+        <p class="muted">Lista em ordem alfabética. Este conteúdo vem de <code>data/banco.json</code>.</p>
+        <div id="namesList" class="names-list"></div>
+      </section>
+
+      <section id="lettersView" class="view study-view">
+        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">ESTUDO</p><h2>Letras hebraicas</h2></div></div>
+        <p class="muted">As formas finais são apresentadas junto das letras correspondentes.</p>
+        <div id="lettersGrid" class="study-grid"></div>
+      </section>
+
+      <section id="marksView" class="view study-view">
+        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">ESTUDO</p><h2>Vogais</h2></div></div>
+        <p class="muted">Quando um sinal é estudado sozinho, o quadrado representa a letra-base e o sinal ocupa sua posição habitual.</p>
+        <div id="marksGrid" class="study-grid"></div>
+      </section>
+    </main>
+
+    <div id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <button id="closeMenu" class="close">×</button>
+        <img src="assets/icon-192.png" alt="" class="drawer-icon">
+        <h2>Translitera</h2><p>Hebraico bíblico</p>
+        <nav>
+          <button data-view="home">Início</button>
+          <button data-view="names">Nomes cadastrados</button>
+          <button data-view="letters">Letras hebraicas</button>
+          <button data-view="marks">Vogais</button>
+        </nav>
+        <div class="drawer-note">Seu progresso fica salvo neste aparelho.</div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

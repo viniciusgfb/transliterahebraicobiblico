@@ -1,0 +1,361 @@
+[
+  {
+    "id": "alef",
+    "he": "א",
+    "final": false,
+    "name_pt": "Álef",
+    "translit": "'",
+    "alt": [
+      "'",
+      "a",
+      "h",
+      "—"
+    ],
+    "game": "'"
+  },
+  {
+    "id": "bet",
+    "he": "ב",
+    "final": false,
+    "name_pt": "Bet",
+    "translit": "b",
+    "alt": [
+      "b",
+      "v",
+      "p",
+      "f"
+    ]
+  },
+  {
+    "id": "gimel",
+    "he": "ג",
+    "final": false,
+    "name_pt": "Guímel",
+    "translit": "g",
+    "alt": [
+      "g",
+      "k",
+      "q",
+      "j"
+    ]
+  },
+  {
+    "id": "dalet",
+    "he": "ד",
+    "final": false,
+    "name_pt": "Dálet",
+    "translit": "d",
+    "alt": [
+      "d",
+      "t",
+      "r",
+      "th"
+    ]
+  },
+  {
+    "id": "he",
+    "he": "ה",
+    "final": false,
+    "name_pt": "He",
+    "translit": "h",
+    "alt": [
+      "h",
+      "—",
+      "ch",
+      "k"
+    ]
+  },
+  {
+    "id": "vav",
+    "he": "ו",
+    "final": false,
+    "name_pt": "Vav",
+    "translit": "v",
+    "alt": [
+      "v",
+      "w",
+      "u",
+      "o"
+    ]
+  },
+  {
+    "id": "zayin",
+    "he": "ז",
+    "final": false,
+    "name_pt": "Záin",
+    "translit": "z",
+    "alt": [
+      "z",
+      "s",
+      "j",
+      "ts"
+    ]
+  },
+  {
+    "id": "het",
+    "he": "ח",
+    "final": false,
+    "name_pt": "Het",
+    "translit": "ch",
+    "game": "ch",
+    "alt": [
+      "ch",
+      "h",
+      "kh",
+      "k"
+    ]
+  },
+  {
+    "id": "tet",
+    "he": "ט",
+    "final": false,
+    "name_pt": "Tet",
+    "translit": "t",
+    "alt": [
+      "t",
+      "ṭ",
+      "d",
+      "th"
+    ]
+  },
+  {
+    "id": "yod",
+    "he": "י",
+    "final": false,
+    "name_pt": "Yod",
+    "translit": "y",
+    "alt": [
+      "y",
+      "i",
+      "j",
+      "—"
+    ]
+  },
+  {
+    "id": "kaf",
+    "he": "כ",
+    "final": false,
+    "name_pt": "Kaf",
+    "translit": "k / kh",
+    "game": "k",
+    "alt": [
+      "k",
+      "kh",
+      "g",
+      "h"
+    ]
+  },
+  {
+    "id": "lamed",
+    "he": "ל",
+    "final": false,
+    "name_pt": "Lâmed",
+    "translit": "l",
+    "alt": [
+      "l",
+      "r",
+      "n",
+      "—"
+    ]
+  },
+  {
+    "id": "mem",
+    "he": "מ",
+    "final": false,
+    "name_pt": "Mem",
+    "translit": "m",
+    "alt": [
+      "m",
+      "n",
+      "b",
+      "—"
+    ]
+  },
+  {
+    "id": "nun",
+    "he": "נ",
+    "final": false,
+    "name_pt": "Nun",
+    "translit": "n",
+    "alt": [
+      "n",
+      "m",
+      "l",
+      "—"
+    ]
+  },
+  {
+    "id": "samekh",
+    "he": "ס",
+    "final": false,
+    "name_pt": "Sâmeq",
+    "translit": "s",
+    "alt": [
+      "s",
+      "z",
+      "sh",
+      "ts"
+    ]
+  },
+  {
+    "id": "ayin",
+    "he": "ע",
+    "final": false,
+    "name_pt": "Ayin",
+    "translit": "'",
+    "game": "'",
+    "alt": [
+      "'",
+      "a",
+      "h",
+      "y"
+    ]
+  },
+  {
+    "id": "pe",
+    "he": "פ",
+    "final": false,
+    "name_pt": "Pe",
+    "translit": "p / f",
+    "game": "p",
+    "alt": [
+      "p",
+      "f",
+      "b",
+      "v"
+    ]
+  },
+  {
+    "id": "tsadi",
+    "he": "צ",
+    "final": false,
+    "name_pt": "Tsadi",
+    "translit": "ts",
+    "alt": [
+      "ts",
+      "tz",
+      "s",
+      "t"
+    ]
+  },
+  {
+    "id": "qof",
+    "he": "ק",
+    "final": false,
+    "name_pt": "Qof",
+    "translit": "q / k",
+    "game": "q",
+    "alt": [
+      "q",
+      "k",
+      "g",
+      "kh"
+    ]
+  },
+  {
+    "id": "resh",
+    "he": "ר",
+    "final": false,
+    "name_pt": "Resh",
+    "translit": "r",
+    "alt": [
+      "r",
+      "l",
+      "d",
+      "gh"
+    ]
+  },
+  {
+    "id": "shin",
+    "he": "ש",
+    "final": false,
+    "name_pt": "Shin / Sin",
+    "translit": "sh / s",
+    "game": "sh",
+    "alt": [
+      "sh",
+      "s",
+      "ch",
+      "z"
+    ]
+  },
+  {
+    "id": "tav",
+    "he": "ת",
+    "final": false,
+    "name_pt": "Tav",
+    "translit": "t",
+    "alt": [
+      "t",
+      "th",
+      "d",
+      "s"
+    ]
+  },
+  {
+    "id": "kaf-sofit",
+    "he": "ך",
+    "final": true,
+    "name_pt": "Kaf final",
+    "translit": "kh / k",
+    "game": "k",
+    "alt": [
+      "k",
+      "kh",
+      "h",
+      "g"
+    ]
+  },
+  {
+    "id": "mem-sofit",
+    "he": "ם",
+    "final": true,
+    "name_pt": "Mem final",
+    "translit": "m",
+    "alt": [
+      "m",
+      "n",
+      "b",
+      "—"
+    ]
+  },
+  {
+    "id": "nun-sofit",
+    "he": "ן",
+    "final": true,
+    "name_pt": "Nun final",
+    "translit": "n",
+    "alt": [
+      "n",
+      "m",
+      "l",
+      "—"
+    ]
+  },
+  {
+    "id": "pe-sofit",
+    "he": "ף",
+    "final": true,
+    "name_pt": "Pe final",
+    "translit": "f",
+    "alt": [
+      "f",
+      "p",
+      "v",
+      "b"
+    ]
+  },
+  {
+    "id": "tsadi-sofit",
+    "he": "ץ",
+    "final": true,
+    "name_pt": "Tsadi final",
+    "translit": "ts",
+    "alt": [
+      "ts",
+      "tz",
+      "s",
+      "t"
+    ]
+  }
+]
