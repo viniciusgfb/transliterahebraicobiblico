@@ -1,17 +1,10 @@
-# Translitera - Hebraico bíblico
+# Translitera - Hebraico bíblico v5
 
-Web app estático para GitHub Pages.
+Esta versão usa diretamente o `data/banco.json` fornecido pelo usuário.
 
-## Progresso individual
-O progresso é salvo localmente no navegador/dispositivo usando `localStorage`. O GitHub Pages não armazena o progresso dos jogadores.
+Campos do banco principal:
+`id`, `he`, `hePlain`, `pt`, `translit`, `strong`, `meaning`, `related`, `refs`.
 
-- O contador principal mostra o progresso da **rodada atual**.
-- `total` mostra quantas palavras já foram concluídas neste navegador ao longo das rodadas.
-- Ao concluir todo o banco, aparece **Começar nova rodada**, que libera novamente todas as palavras.
-- **Reiniciar progresso** apaga a rodada e o histórico deste navegador.
-- Outro celular/navegador começa com seu próprio armazenamento local.
+As palavras em `related` usam o mesmo padrão de campos.
 
-## Publicação
-1. Envie os arquivos para a raiz do repositório.
-2. GitHub → Settings → Pages → Deploy from a branch.
-3. Branch `main`, pasta `/(root)`.
+O progresso é local ao navegador/dispositivo via `localStorage`.

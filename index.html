@@ -19,7 +19,7 @@
         <img src="assets/icon-192.png" alt="" class="brand-icon">
         <div><strong>Translitera</strong><span>Hebraico bíblico</span></div>
       </div>
-      <div class="counter" aria-label="Progresso"><span id="score">0</span><small>/ <span id="total">0</span></small><div class="history">total: <span id="totalHistory">0</span></div></div>
+      <div class="counter" aria-label="Palavras concluídas"><span id="score">0</span><small>/ <span id="total">0</span></small></div>
     </header>
 
     <main>
@@ -29,15 +29,16 @@
           <h1>Translitera - Hebraico bíblico</h1>
           <p class="lead">Aprenda a reconhecer letras, sinais e a transliterar nomes e palavras do hebraico bíblico.</p>
           <div class="home-actions">
-            <button id="startBtn" class="primary big">Começar uma palavra <span>→</span></button><div id="roundComplete" class="round-complete hidden"><strong>🎉 Parabéns!</strong><p>Você concluiu todas as palavras cadastradas nesta rodada.</p><button id="newRoundBtn" class="primary">Começar nova rodada</button></div>
+            <button id="startBtn" class="primary big">Começar uma palavra <span>→</span></button>
+            <button id="alphabetBtn" class="secondary big">Modo Alfabeto <span>↻</span></button>
           </div>
           <div class="home-links">
-            <button data-view="names" class="text-link">Nomes cadastrados</button>
+            <button data-view="names" class="text-link">Nomes no banco</button>
             <button data-view="letters" class="text-link">Letras hebraicas</button>
-            <button data-view="marks" class="text-link">Vogais</button>
+            <button data-view="marks" class="text-link">Sinais e vogais</button>
           </div>
         </div>
-        <p class="storage-note">O progresso fica salvo somente neste navegador e neste dispositivo.</p><button id="resetProgressBtn" class="reset-link">Reiniciar progresso</button><div class="tip"><strong>Dica:</strong> a seta ao lado do hebraico lembra que a leitura é da direita para a esquerda.</div>
+        <div class="tip"><strong>Dica:</strong> a seta ao lado do hebraico lembra que a leitura é da direita para a esquerda.</div>
       </section>
 
       <section id="gameView" class="view">
@@ -79,7 +80,7 @@
       </section>
 
       <section id="namesView" class="view study-view">
-        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">BANCO</p><h2>Nomes cadastrados</h2></div></div>
+        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">BANCO</p><h2>Nomes adicionados</h2></div></div>
         <p class="muted">Lista em ordem alfabética. Este conteúdo vem de <code>data/banco.json</code>.</p>
         <div id="namesList" class="names-list"></div>
       </section>
@@ -91,7 +92,7 @@
       </section>
 
       <section id="marksView" class="view study-view">
-        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">ESTUDO</p><h2>Vogais</h2></div></div>
+        <div class="study-head"><button class="ghost home-nav">← Menu</button><div><p class="eyebrow">ESTUDO</p><h2>Sinais e vogais</h2></div></div>
         <p class="muted">Quando um sinal é estudado sozinho, o quadrado representa a letra-base e o sinal ocupa sua posição habitual.</p>
         <div id="marksGrid" class="study-grid"></div>
       </section>
@@ -104,9 +105,10 @@
         <h2>Translitera</h2><p>Hebraico bíblico</p>
         <nav>
           <button data-view="home">Início</button>
-          <button data-view="names">Nomes cadastrados</button>
+          <button id="drawerAlphabet">Modo Alfabeto</button>
+          <button data-view="names">Nomes no banco</button>
           <button data-view="letters">Letras hebraicas</button>
-          <button data-view="marks">Vogais</button>
+          <button data-view="marks">Sinais e vogais</button>
         </nav>
         <div class="drawer-note">Seu progresso fica salvo neste aparelho.</div>
       </div>
