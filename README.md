@@ -1,29 +1,12 @@
 # Translitera - Hebraico bíblico
 
-Web app/PWA estático para GitHub Pages, pensado para celular.
+Versão focada em um único modo de jogo: transliteração de nomes e palavras relacionadas.
 
-## Estrutura
-
-- `index.html` — entrada do aplicativo
-- `styles.css` — interface responsiva
-- `app.js` — mecânicas do jogo
-- `data/banco.json` — nomes e palavras relacionadas
-- `data/letters.json` — letras hebraicas
-- `data/marks.json` — niqqud, modificadores e outros sinais
-- `assets/` — ícones e imagem original
-- `manifest.webmanifest` — instalação como PWA
-- `service-worker.js` — cache do aplicativo
-- `.nojekyll` — evita processamento desnecessário do Jekyll
+- Modo Alfabeto removido.
+- Estudo separado de letras e somente vogais.
+- Alef e Ayin: `.`, representados no jogo como apóstrofo `'`. Het: `ch`.
+- Suporte a pataḥ furtivo no fim de palavras, como נֹחַ → noach.
+- Vogais isoladas usam um quadrado-base para posicionamento visual.
 
 ## GitHub Pages
-
-1. Crie um repositório.
-2. Envie todos os arquivos mantendo as pastas.
-3. Em **Settings > Pages**, selecione **Deploy from a branch**, branch `main` e pasta `/(root)`.
-4. Abra a URL fornecida pelo GitHub Pages.
-
-O aplicativo precisa ser servido por HTTP/HTTPS; abrir `index.html` diretamente com `file://` pode impedir o carregamento dos arquivos JSON.
-
-## Banco
-
-O banco atual contém 31 nomes. Novos registros podem ser acrescentados ao `data/banco.json` seguindo a mesma estrutura.
+Envie todo o conteúdo desta pasta para a raiz do repositório, depois em Settings → Pages selecione `main` e `/(root)`.

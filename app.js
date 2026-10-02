@@ -2,7 +2,7 @@ const state = {
   names: [], letters: [], marks: [], current: null, relatedParent: null,
   units: [], unitIndex: 0, phase: "letter", markIndex: 0,
   completed: new Set(JSON.parse(localStorage.getItem("translit-completed") || "[]")),
-  score: 0, alphabetMode: false, alphabetPhase: "letter", alphabetTarget: null
+  score: 0
 };
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const normalize = s => s.normalize("NFC");
@@ -23,7 +23,7 @@ function renderStudy(){
   const sorted=[...state.names].sort((a,b)=>a.pt.localeCompare(b.pt,"pt-BR"));
   $("#namesList").innerHTML=sorted.map(n=>`<div class="name-row"><div><strong>${n.pt}</strong><small>Strong ${n.strong} · ${n.translit}</small></div><span dir="rtl">${n.he}</span></div>`).join("");
   $("#lettersGrid").innerHTML=state.letters.map(l=>`<div class="study-card"><div class="he" dir="rtl">${l.he}</div><strong>${l.name_pt}</strong><div class="tr">${l.game||l.translit}</div>${l.final?'<small>forma final</small>':''}</div>`).join("");
-  $("#marksGrid").innerHTML=state.marks.map(m=>`<div class="study-card"><div class="mark-holder ${markPositionClass(m)}" dir="rtl"><span class="mark-square">□</span><span class="isolated-mark">${m.he}</span></div><strong>${m.name_pt}</strong><div class="tr">${m.translit}</div><small>${m.category}</small></div>`).join("");
+  $("#marksGrid").innerHTML=state.marks.filter(m=>m.category==="vowel").map(m=>`<div class="study-card"><div class="mark-holder ${markPositionClass(m)}" dir="ltr"><span class="mark-square">□</span><span class="isolated-mark">${m.he}</span></div><strong>${m.name_pt}</strong><div class="tr">${m.game||m.translit}</div></div>`).join("");
 }
 function markPositionClass(m){
   if(m.id.includes("shin-dot")||m.id.includes("sin-dot")||m.id==="holam"||m.id==="holam-haser") return "above";
@@ -37,9 +37,10 @@ function pickNext(){
   if(!available.length){showAllDone();return;}
   startNameGame(available[Math.floor(Math.random()*available.length)]);
 }
-function startNameGame(name){ state.alphabetMode=false; state.current=name; state.relatedParent=null; prepareGame(name.he); }
-function startRelatedGame(rel,parent){ state.alphabetMode=false; state.current=rel; state.relatedParent=parent; prepareGame(rel.he); }
-function prepareGame(word){ state.units=buildUnits(word); state.unitIndex=0; state.phase="letter"; state.markIndex=0; showView("game"); renderGame(); }
+function startNameGame(name){ state.current=name; state.relatedParent=null; prepareGame(name.he); }
+function startRelatedGame(rel,parent){ state.current=rel; state.relatedParent=parent; prepareGame(rel.he); }
+function prepareGame(word){ state.units=buildUnits(word); state.unitIndex=0; state.phase=isFurtiveUnit(0)?"mark":"letter"; state.markIndex=0; showView("game"); renderGame(); }
+function isFurtiveUnit(i){ const u=state.units[i]; return !!u && i===state.units.length-1 && ["ח","ע","ה"].includes(u.base) && playableMarks(u).includes("ַ"); }
 
 function buildUnits(word){
   const chars=[...normalize(word)], units=[];
@@ -73,26 +74,46 @@ function currentTarget(){
   if(state.phase==="letter") return {kind:"letter",value:effectiveLetter(u),display:u.base};
   const m=playableMarks(u)[state.markIndex]; return {kind:"mark",value:markInfo(m)?.game||"",display:m};
 }
+function targetHTML(target){
+  if(target.kind!=="mark") return target.display;
+  return `<span class="vowel-box" dir="ltr"><span class="vowel-base">□</span><span class="vowel-mark">${target.display}</span></span>`;
+}
 function renderHebrew(){
   const word=$("#hebrewWord"); word.innerHTML="";
   state.units.forEach((u,i)=>{
     const span=document.createElement("span");
     span.className="unit";
-    if(i===state.unitIndex) span.classList.add("current");
-    // Keep the base letter and all combining marks in the SAME text node.
-    // This lets the browser's Hebrew shaping engine position niqqud correctly.
-    span.textContent=u.base+u.marks.join("");
-    if(i===state.unitIndex) span.classList.add(state.phase==="letter"?"letter-current":"mark-current");
+    const isActive=i===state.unitIndex;
+    const vowelSet=new Set(playableMarks(u));
+    const activeMark=isActive && state.phase==="mark" ? vowelSet.has(u.marks[state.markIndex]) ? u.marks[state.markIndex] : null : null;
+    // Keep the consonant and marks in one visual unit; only the requested part receives the accent color.
+    const base=document.createElement("span");
+    base.className="base"+(isActive&&state.phase==="letter"?" current":"");
+    base.textContent=u.base;
+    span.appendChild(base);
+    u.marks.forEach(m=>{
+      const ms=document.createElement("span");
+      ms.className="mark"+(m===activeMark?" current":"");
+      ms.textContent=m;
+      span.appendChild(ms);
+    });
     word.appendChild(span);
   });
 }
 function completedTranslit(){
   let out="";
   for(let i=0;i<state.unitIndex;i++) out+=unitTranslit(state.units[i]);
-  if(state.unitIndex<state.units.length){ const u=state.units[state.unitIndex]; if(state.phase==="mark"){out+=effectiveLetter(u); playableMarks(u).slice(0,state.markIndex).forEach(m=>out+=markInfo(m).game||"");} }
+  if(state.unitIndex<state.units.length){ const u=state.units[state.unitIndex]; if(state.phase==="mark"){ const done=playableMarks(u).slice(0,state.markIndex).map(m=>markInfo(m).game||"").join(""); out += (u.base!=="ח"&&u.base!=="ע"&&u.base!=="ה") ? effectiveLetter(u)+done : done+effectiveLetter(u); } }
   return out||"—";
 }
-function unitTranslit(u){ return effectiveLetter(u)+playableMarks(u).map(m=>markInfo(m)?.game||"").join(""); }
+function unitTranslit(u){
+  const marks=playableMarks(u).map(m=>markInfo(m)?.game||"").join("");
+  if(u.base==="ח" || u.base==="ע" || u.base==="ה"){
+    const vp=playableMarks(u).find(m=>m==="ַ");
+    if(vp && state.units.indexOf(u)===state.units.length-1) return marks+effectiveLetter(u);
+  }
+  return effectiveLetter(u)+marks;
+}
 function renderGame(){
   const u=state.units[state.unitIndex], marks=playableMarks(u), target=currentTarget();
   $("#gameStep").textContent=state.phase==="letter"?"Letra":"Sinal";
@@ -113,15 +134,19 @@ function answer(value,correct,btn){
   if(value!==correct){btn.classList.add("wrong");$("#feedback").textContent="Ainda não. Tente outra opção.";$("#feedback").className="feedback bad";setTimeout(()=>btn.classList.remove("wrong"),450);return;}
   btn.classList.add("correct");$$(".option").forEach(b=>b.disabled=true);$("#feedback").textContent="Correto!";$("#feedback").className="feedback good";setTimeout(nextStep,350);
 }
+function isFurtive(u){ return state.units.indexOf(u)===state.units.length-1 && ["ח","ע","ה"].includes(u.base) && playableMarks(u).includes("ַ"); }
 function nextStep(){
-  const u=state.units[state.unitIndex];
+  const u=state.units[state.unitIndex], marks=playableMarks(u);
   if(state.phase==="letter"){
-    const marks=playableMarks(u);
-    if(marks.length){state.phase="mark";state.markIndex=0;renderGame();}
-    else{state.unitIndex++; if(state.unitIndex>=state.units.length) finishCurrent(); else renderGame();}
-  } else {state.markIndex++; const marks=playableMarks(u); if(state.markIndex>=marks.length){state.unitIndex++; if(state.unitIndex>=state.units.length) finishCurrent(); else{state.phase="letter";renderGame();}} else renderGame();}
+    if(isFurtive(u) && marks.length){ state.phase="mark"; state.markIndex=0; renderGame(); }
+    else if(marks.length){ state.phase="mark"; state.markIndex=0; renderGame(); }
+    else { state.unitIndex++; if(state.unitIndex>=state.units.length) finishCurrent(); else renderGame(); }
+  } else {
+    state.markIndex++;
+    if(state.markIndex>=marks.length){ state.unitIndex++; if(state.unitIndex>=state.units.length) finishCurrent(); else { state.phase="letter"; renderGame(); } } else renderGame();
+  }
 }
-function finishCurrent(){ if(state.relatedParent){showRelatedResult(state.current,state.relatedParent);return;} if(state.alphabetMode){startAlphabetRound();return;} finishName(state.current); }
+function finishCurrent(){ if(state.relatedParent){showRelatedResult(state.current,state.relatedParent);return;} finishName(state.current); }
 
 function finishName(n){
   state.completed.add(n.id);localStorage.setItem("translit-completed",JSON.stringify([...state.completed]));state.score=state.completed.size;updateCounter();showNameResult(n);

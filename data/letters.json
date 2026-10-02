@@ -4,13 +4,14 @@
     "he": "א",
     "final": false,
     "name_pt": "Álef",
-    "translit": "—",
+    "translit": "'",
     "alt": [
-      "a",
       "'",
-      "—",
-      "h"
-    ]
+      "a",
+      "h",
+      "—"
+    ],
+    "game": "'"
   },
   {
     "id": "bet",
@@ -95,13 +96,13 @@
     "he": "ח",
     "final": false,
     "name_pt": "Het",
-    "translit": "ḥ / kh",
-    "game": "kh",
+    "translit": "ch",
+    "game": "ch",
     "alt": [
-      "kh",
+      "ch",
       "h",
-      "k",
-      "ch"
+      "kh",
+      "k"
     ]
   },
   {
@@ -201,10 +202,10 @@
     "he": "ע",
     "final": false,
     "name_pt": "Ayin",
-    "translit": "ʿ / —",
-    "game": "—",
+    "translit": "'",
+    "game": "'",
     "alt": [
-      "—",
+      "'",
       "a",
       "h",
       "y"
